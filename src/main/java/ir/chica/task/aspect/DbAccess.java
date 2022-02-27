@@ -13,7 +13,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 
-import static io.micrometer.core.instrument.binder.hystrix.MicrometerMetricsPublisherCommand.LOG;
 
 @Component
 public class DbAccess<MyConnection> {
@@ -55,7 +54,7 @@ public class DbAccess<MyConnection> {
             LOG.info(e.getMessage());
         }
 
-        return students;
+        return users;
 
     }
 
